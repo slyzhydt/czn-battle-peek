@@ -1,0 +1,20 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {createHash} from 'node:crypto';
+import {resourceBytes,resourceValue,loadPortableResources} from '../portable-resources.mjs';
+const parent={inherited:3},a=Object.create(parent);a.link=a;a.missing=undefined;
+Object.defineProperty(a,'hidden',{value:-0,writable:false,enumerable:false,configurable:false});
+a.sparse=new Array(4);a.sparse[2]=NaN;
+const copy=resourceValue(resourceBytes(a));
+assert.equal(copy.link,copy);assert.equal(Object.getPrototypeOf(copy).inherited,3);
+assert(Object.hasOwn(copy,'missing'));assert(Object.is(copy.hidden,-0));
+assert.equal(Object.getOwnPropertyDescriptor(copy,'hidden').enumerable,false);
+assert.equal(copy.sparse.length,4);assert(!Object.hasOwn(copy.sparse,0));assert(Number.isNaN(copy.sparse[2]));
+const root=new URL('../data/resources/',import.meta.url),manifest=JSON.parse(fs.readFileSync(new URL('manifest.json',root)));
+for(const entry of manifest.tables){assert.equal(createHash('sha256').update(fs.readFileSync(new URL(entry.file,root))).digest('hex'),entry.SHA256);}
+const resources=loadPortableResources(root);
+assert.equal(resources.get('card','c_30134_srt4_rsp4_mut1').id,'c_30134_srt4_rsp4_mut1');
+assert.throws(()=>resources.get('powerstep_define',999999999));
+assert.throws(()=>resources.number({value:'1'},'value'));
+assert.deepEqual(resources.array('[a, b]'),['a','b']);
+console.log(JSON.stringify({passed:true,tables:manifest.tables.length,graphTypesAndAliasesPreserved:true,unknownTypedKeysBlocked:true,gameAttached:false}));

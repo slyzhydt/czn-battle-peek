@@ -1,0 +1,518 @@
+{
+  "schema": 1,
+  "source": "diagnostics\\seed-bytecode-20261023\\battle-engine-investigation\\execution\\evidence\\effect-runtime\\procSkillEff_0xf000000df800.linear.js",
+  "source_sha256": "7b1c42f4c73667c4efc12152c6518e1329416fd8153a529bc3b470fcbc29aee0",
+  "aliases": [
+    {
+      "effect": "SKILL_EFF_DMG_COOP",
+      "offset": 17647,
+      "branch": 21605
+    },
+    {
+      "effect": "SKILL_EFF_NIHILUM_META_DMG",
+      "offset": 17672,
+      "branch": 22738
+    },
+    {
+      "effect": "SKILL_EFF_EGOSKILL_SLOT_REPLACE",
+      "offset": 18497,
+      "branch": 36613
+    },
+    {
+      "effect": "SKILL_EFF_TACTIC_COOLDOWN_ADD",
+      "offset": 18522,
+      "branch": 37154
+    },
+    {
+      "effect": "SKILL_EFF_TACTIC_COOLDOWN_ADD_RANDOM",
+      "offset": 18547,
+      "branch": 37158
+    },
+    {
+      "effect": "SKILL_EFF_ORLEA_CREATION_EVOLVE",
+      "offset": 18572,
+      "branch": 37162
+    },
+    {
+      "effect": "SKILL_EFF_CARD_USE",
+      "offset": 18597,
+      "branch": 37721
+    },
+    {
+      "effect": "SKILL_EFF_CARD_USE_AND_COPY",
+      "offset": 18622,
+      "branch": 39762
+    },
+    {
+      "effect": "SKILL_EFF_CARD_DRAW",
+      "offset": 18647,
+      "branch": 40469
+    },
+    {
+      "effect": "SKILL_EFF_CARD_DRAW_WHILE_UNIQUE",
+      "offset": 18672,
+      "branch": 41291
+    },
+    {
+      "effect": "SKILL_EFF_CARD_DISCARD",
+      "offset": 18697,
+      "branch": 42534
+    },
+    {
+      "effect": "SKILL_EFF_CARD_EXHAUST",
+      "offset": 18722,
+      "branch": 42863
+    },
+    {
+      "effect": "SKILL_EFF_CARD_COPY_TO_IGNORE_COND",
+      "offset": 18747,
+      "branch": 43200
+    },
+    {
+      "effect": "SKILL_EFF_CARD_COPY_TO",
+      "offset": 18772,
+      "branch": 43200
+    },
+    {
+      "effect": "SKILL_EFF_CARD_COPY_TO_EXCEPT_CS",
+      "offset": 18797,
+      "branch": 43200
+    },
+    {
+      "effect": "SKILL_EFF_CARD_COPY_TO_ORIGIN",
+      "offset": 18822,
+      "branch": 43200
+    },
+    {
+      "effect": "SKILL_EFF_CARD_COPY_TO_IGNORE_COND_ORIGIN",
+      "offset": 18847,
+      "branch": 43200
+    },
+    {
+      "effect": "SKILL_EFF_CARD_COPY_TO_EXCEPT_CS_ORIGIN",
+      "offset": 18872,
+      "branch": 43200
+    },
+    {
+      "effect": "SKILL_EFF_CARD_CHANGE",
+      "offset": 18897,
+      "branch": 43907
+    },
+    {
+      "effect": "SKILL_EFF_UNIQUE_TIPERA_2",
+      "offset": 18922,
+      "branch": 45172
+    },
+    {
+      "effect": "SKILL_EFF_UNIQUE_TIPERA_4",
+      "offset": 18947,
+      "branch": 45726
+    },
+    {
+      "effect": "SKILL_EFF_CARD_MOVE_TO",
+      "offset": 18972,
+      "branch": 46375
+    },
+    {
+      "effect": "SKILL_EFF_CARD_MOVE_TO_MONSTER_JUDGMENT",
+      "offset": 18997,
+      "branch": 46375
+    },
+    {
+      "effect": "SKILL_EFF_CARD_REMOVE",
+      "offset": 19022,
+      "branch": 47031
+    },
+    {
+      "effect": "SKILL_EFF_MIX_DECK",
+      "offset": 19047,
+      "branch": 47380
+    },
+    {
+      "effect": "SKILL_EFF_CARD_SHUFFLE",
+      "offset": 19072,
+      "branch": 47506
+    },
+    {
+      "effect": "SKILL_EFF_CARD_GET_IGNORE_COND",
+      "offset": 19097,
+      "branch": 47744
+    },
+    {
+      "effect": "SKILL_EFF_CARD_GET",
+      "offset": 19122,
+      "branch": 47744
+    },
+    {
+      "effect": "SKILL_EFF_CARD_GET_OVERFLOW_TO_DECK_TOP",
+      "offset": 19147,
+      "branch": 47744
+    },
+    {
+      "effect": "SKILL_EFF_CARD_GET_WITH_COST",
+      "offset": 19172,
+      "branch": 47744
+    },
+    {
+      "effect": "SKILL_EFF_CARD_GET_USER",
+      "offset": 19197,
+      "branch": 50755
+    },
+    {
+      "effect": "SKILL_EFF_CARD_TALENT_UNIQUE_OLGA_STACK_SET_ADD",
+      "offset": 19397,
+      "branch": 53305
+    },
+    {
+      "effect": "SKILL_EFF_CARD_TALENT_ADD",
+      "offset": 19422,
+      "branch": 53582
+    },
+    {
+      "effect": "SKILL_EFF_CARD_TALENT_REMOVE",
+      "offset": 19447,
+      "branch": 53844
+    },
+    {
+      "effect": "SKILL_EFF_CARD_TALENT_REPLACE",
+      "offset": 19472,
+      "branch": 54409
+    },
+    {
+      "effect": "SKILL_EFF_CARD_DEBUFF_ADD_SHOW_SKIP",
+      "offset": 19972,
+      "branch": 64173
+    },
+    {
+      "effect": "SKILL_EFF_CARD_DEBUFF_ADD",
+      "offset": 19997,
+      "branch": 64173
+    },
+    {
+      "effect": "SKILL_EFF_CARD_DEBUFF_REMOVE",
+      "offset": 20022,
+      "branch": 65023
+    },
+    {
+      "effect": "SKILL_EFF_TRIGGER_RETAINED",
+      "offset": 20772,
+      "branch": 88546
+    },
+    {
+      "effect": "SKILL_EFF_TRIGGER_INSPIRATION",
+      "offset": 20797,
+      "branch": 88808
+    },
+    {
+      "effect": "SKILL_EFF_TRIGGER_ATTUNMENT",
+      "offset": 20822,
+      "branch": 89058
+    },
+    {
+      "effect": "SKILL_EFF_TRIGGER_PYEONRIN",
+      "offset": 20847,
+      "branch": 89308
+    }
+  ],
+  "groups": [
+    {
+      "start": 21605,
+      "end_exclusive": 22738,
+      "effects": [
+        "SKILL_EFF_DMG_COOP"
+      ],
+      "instructions": 206,
+      "file": "effect-21605.linear.txt"
+    },
+    {
+      "start": 22738,
+      "end_exclusive": 22894,
+      "effects": [
+        "SKILL_EFF_NIHILUM_META_DMG"
+      ],
+      "instructions": 25,
+      "file": "effect-22738.linear.txt"
+    },
+    {
+      "start": 36613,
+      "end_exclusive": 37154,
+      "effects": [
+        "SKILL_EFF_EGOSKILL_SLOT_REPLACE"
+      ],
+      "instructions": 95,
+      "file": "effect-36613.linear.txt"
+    },
+    {
+      "start": 37154,
+      "end_exclusive": 37158,
+      "effects": [
+        "SKILL_EFF_TACTIC_COOLDOWN_ADD"
+      ],
+      "instructions": 1,
+      "file": "effect-37154.linear.txt"
+    },
+    {
+      "start": 37158,
+      "end_exclusive": 37162,
+      "effects": [
+        "SKILL_EFF_TACTIC_COOLDOWN_ADD_RANDOM"
+      ],
+      "instructions": 1,
+      "file": "effect-37158.linear.txt"
+    },
+    {
+      "start": 37162,
+      "end_exclusive": 37721,
+      "effects": [
+        "SKILL_EFF_ORLEA_CREATION_EVOLVE"
+      ],
+      "instructions": 99,
+      "file": "effect-37162.linear.txt"
+    },
+    {
+      "start": 37721,
+      "end_exclusive": 39762,
+      "effects": [
+        "SKILL_EFF_CARD_USE"
+      ],
+      "instructions": 368,
+      "file": "effect-37721.linear.txt"
+    },
+    {
+      "start": 39762,
+      "end_exclusive": 40469,
+      "effects": [
+        "SKILL_EFF_CARD_USE_AND_COPY"
+      ],
+      "instructions": 122,
+      "file": "effect-39762.linear.txt"
+    },
+    {
+      "start": 40469,
+      "end_exclusive": 41291,
+      "effects": [
+        "SKILL_EFF_CARD_DRAW"
+      ],
+      "instructions": 146,
+      "file": "effect-40469.linear.txt"
+    },
+    {
+      "start": 41291,
+      "end_exclusive": 42534,
+      "effects": [
+        "SKILL_EFF_CARD_DRAW_WHILE_UNIQUE"
+      ],
+      "instructions": 234,
+      "file": "effect-41291.linear.txt"
+    },
+    {
+      "start": 42534,
+      "end_exclusive": 42863,
+      "effects": [
+        "SKILL_EFF_CARD_DISCARD"
+      ],
+      "instructions": 54,
+      "file": "effect-42534.linear.txt"
+    },
+    {
+      "start": 42863,
+      "end_exclusive": 43200,
+      "effects": [
+        "SKILL_EFF_CARD_EXHAUST"
+      ],
+      "instructions": 56,
+      "file": "effect-42863.linear.txt"
+    },
+    {
+      "start": 43200,
+      "end_exclusive": 43907,
+      "effects": [
+        "SKILL_EFF_CARD_COPY_TO_IGNORE_COND",
+        "SKILL_EFF_CARD_COPY_TO",
+        "SKILL_EFF_CARD_COPY_TO_EXCEPT_CS",
+        "SKILL_EFF_CARD_COPY_TO_ORIGIN",
+        "SKILL_EFF_CARD_COPY_TO_IGNORE_COND_ORIGIN",
+        "SKILL_EFF_CARD_COPY_TO_EXCEPT_CS_ORIGIN"
+      ],
+      "instructions": 121,
+      "file": "effect-43200.linear.txt"
+    },
+    {
+      "start": 43907,
+      "end_exclusive": 45172,
+      "effects": [
+        "SKILL_EFF_CARD_CHANGE"
+      ],
+      "instructions": 250,
+      "file": "effect-43907.linear.txt"
+    },
+    {
+      "start": 45172,
+      "end_exclusive": 45726,
+      "effects": [
+        "SKILL_EFF_UNIQUE_TIPERA_2"
+      ],
+      "instructions": 104,
+      "file": "effect-45172.linear.txt"
+    },
+    {
+      "start": 45726,
+      "end_exclusive": 46375,
+      "effects": [
+        "SKILL_EFF_UNIQUE_TIPERA_4"
+      ],
+      "instructions": 133,
+      "file": "effect-45726.linear.txt"
+    },
+    {
+      "start": 46375,
+      "end_exclusive": 47031,
+      "effects": [
+        "SKILL_EFF_CARD_MOVE_TO",
+        "SKILL_EFF_CARD_MOVE_TO_MONSTER_JUDGMENT"
+      ],
+      "instructions": 112,
+      "file": "effect-46375.linear.txt"
+    },
+    {
+      "start": 47031,
+      "end_exclusive": 47380,
+      "effects": [
+        "SKILL_EFF_CARD_REMOVE"
+      ],
+      "instructions": 58,
+      "file": "effect-47031.linear.txt"
+    },
+    {
+      "start": 47380,
+      "end_exclusive": 47506,
+      "effects": [
+        "SKILL_EFF_MIX_DECK"
+      ],
+      "instructions": 23,
+      "file": "effect-47380.linear.txt"
+    },
+    {
+      "start": 47506,
+      "end_exclusive": 47744,
+      "effects": [
+        "SKILL_EFF_CARD_SHUFFLE"
+      ],
+      "instructions": 44,
+      "file": "effect-47506.linear.txt"
+    },
+    {
+      "start": 47744,
+      "end_exclusive": 50755,
+      "effects": [
+        "SKILL_EFF_CARD_GET_IGNORE_COND",
+        "SKILL_EFF_CARD_GET",
+        "SKILL_EFF_CARD_GET_OVERFLOW_TO_DECK_TOP",
+        "SKILL_EFF_CARD_GET_WITH_COST"
+      ],
+      "instructions": 562,
+      "file": "effect-47744.linear.txt"
+    },
+    {
+      "start": 50755,
+      "end_exclusive": 51189,
+      "effects": [
+        "SKILL_EFF_CARD_GET_USER"
+      ],
+      "instructions": 84,
+      "file": "effect-50755.linear.txt"
+    },
+    {
+      "start": 53305,
+      "end_exclusive": 53582,
+      "effects": [
+        "SKILL_EFF_CARD_TALENT_UNIQUE_OLGA_STACK_SET_ADD"
+      ],
+      "instructions": 52,
+      "file": "effect-53305.linear.txt"
+    },
+    {
+      "start": 53582,
+      "end_exclusive": 53844,
+      "effects": [
+        "SKILL_EFF_CARD_TALENT_ADD"
+      ],
+      "instructions": 46,
+      "file": "effect-53582.linear.txt"
+    },
+    {
+      "start": 53844,
+      "end_exclusive": 54409,
+      "effects": [
+        "SKILL_EFF_CARD_TALENT_REMOVE"
+      ],
+      "instructions": 105,
+      "file": "effect-53844.linear.txt"
+    },
+    {
+      "start": 54409,
+      "end_exclusive": 54974,
+      "effects": [
+        "SKILL_EFF_CARD_TALENT_REPLACE"
+      ],
+      "instructions": 105,
+      "file": "effect-54409.linear.txt"
+    },
+    {
+      "start": 64173,
+      "end_exclusive": 65023,
+      "effects": [
+        "SKILL_EFF_CARD_DEBUFF_ADD_SHOW_SKIP",
+        "SKILL_EFF_CARD_DEBUFF_ADD"
+      ],
+      "instructions": 167,
+      "file": "effect-64173.linear.txt"
+    },
+    {
+      "start": 65023,
+      "end_exclusive": 65379,
+      "effects": [
+        "SKILL_EFF_CARD_DEBUFF_REMOVE"
+      ],
+      "instructions": 65,
+      "file": "effect-65023.linear.txt"
+    },
+    {
+      "start": 88546,
+      "end_exclusive": 88808,
+      "effects": [
+        "SKILL_EFF_TRIGGER_RETAINED"
+      ],
+      "instructions": 59,
+      "file": "effect-88546.linear.txt"
+    },
+    {
+      "start": 88808,
+      "end_exclusive": 89058,
+      "effects": [
+        "SKILL_EFF_TRIGGER_INSPIRATION"
+      ],
+      "instructions": 57,
+      "file": "effect-88808.linear.txt"
+    },
+    {
+      "start": 89058,
+      "end_exclusive": 89308,
+      "effects": [
+        "SKILL_EFF_TRIGGER_ATTUNMENT"
+      ],
+      "instructions": 57,
+      "file": "effect-89058.linear.txt"
+    },
+    {
+      "start": 89308,
+      "end_exclusive": 89462,
+      "effects": [
+        "SKILL_EFF_TRIGGER_PYEONRIN"
+      ],
+      "instructions": 25,
+      "file": "effect-89308.linear.txt"
+    }
+  ],
+  "full_source_required": "Nested closures and shared target tails must be read from the complete source; these excerpts are navigation aids only."
+}

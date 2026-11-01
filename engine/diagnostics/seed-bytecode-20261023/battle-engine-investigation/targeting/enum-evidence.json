@@ -1,0 +1,544 @@
+{
+  "source": "diagnostics\\seed-bytecode-20261023\\battle-engine-investigation\\targeting\\battle_enums.js.disasm.json",
+  "cache_sha256": "b8c1686ea1435265ab136b5ac0843e6060e8209d29ebf2fd11221af3648bf751",
+  "enum_maps": {
+    "TARGET_CARD": {
+      "CARD_SET_NONE": "CARD_SET_NONE",
+      "CARD_SET_ALL": "CARD_SET_ALL",
+      "CART_SET_ALL_INCLUDE_DESIGNED": "CARD_SET_ALL_INCLUDE_DESIGNED",
+      "CARD_SET_GET_CARD": "CARD_SET_GET_CARD",
+      "CARD_SET_DESIGNED": "CARD_SET_DESIGNED",
+      "CARD_SET_DESIGNED_R_SPARK": "CARD_SET_DESIGNED_R_SPARK",
+      "CARD_SET_ALL_EXCEPT_DESIGNED": "CARD_SET_ALL_EXCEPT_DESIGNED",
+      "CARD_SET_CHAR_EXCEPT_DESIGNED": "CARD_SET_CHAR_EXCEPT_DESIGNED",
+      "CARD_SET_CHAR_EXCEPT_THIS_CARD": "CARD_SET_CHAR_EXCEPT_THIS_CARD",
+      "CARD_SET_CHAR_EXCEPT_THIS_R_SPARK": "CARD_SET_CHAR_EXCEPT_THIS_R_SPARK",
+      "CARD_SET_THIS_CARD": "CARD_SET_THIS_CARD",
+      "CARD_SET_ALL_EXCEPT_THIS_CARD": "CARD_SET_ALL_EXCEPT_THIS_CARD",
+      "CARD_SET_ALL_EXCEPT_OWN_EGO": "CARD_SET_ALL_EXCEPT_OWN_EGO",
+      "CARD_SET_BEFORE_EFF_TARGET": "CARD_SET_BEFORE_EFF_TARGET",
+      "CARD_SET_BEFORE_EFF_EXCEPT_TARGET": "CARD_SET_BEFORE_EFF_EXCEPT_TARGET",
+      "CARD_SET_TURN_DRAW": "CARD_SET_TURN_DRAW",
+      "CARD_SET_TURN_DRAW_CHAR": "CARD_SET_TURN_DRAW_CHAR",
+      "CARD_SET_REWARD_ID": "CARD_SET_REWARD_ID",
+      "CARD_SET_USING": "CARD_SET_USING",
+      "CARD_SET_USED_BEFORE": "CARD_SET_USED_BEFORE",
+      "CARD_SET_TRIGGERED": "CARD_SET_TRIGGERED",
+      "CARD_SET_TRIGGERED_OWNER": "CARD_SET_TRIGGERED_OWNER",
+      "CARD_SET_USABLE": "CARD_SET_USABLE",
+      "CARD_SET_CHAR_EGO": "CARD_SET_CHAR_EGO",
+      "CARD_SET_CHAR": "CARD_SET_CHAR",
+      "CARD_SET_NOT_CHAR_OWNER": "CARD_SET_NOT_CHAR_OWNER",
+      "CARD_SET_EXCEPT_CHAR_OWNER": "CARD_SET_EXCEPT_CHAR_OWNER",
+      "CARD_SET_CLASS": "CARD_SET_CLASS",
+      "CARD_SET_USE_THIS_TURN": "CARD_SET_USE_THIS_TURN",
+      "CARD_SET_TRIGGER_INSPIRATION": "CARD_SET_TRIGGER_INSPIRATION",
+      "CARD_SET_TRIGGER_ATTUNMENT": "CARD_SET_TRIGGER_ATTUNMENT"
+    },
+    "CARD_SET_PICK_TYPE": {
+      "LIST_PICK_NONE": "LIST_PICK_NONE",
+      "LIST_PICK_ORDER": "LIST_PICK_ORDER",
+      "LIST_PICK_RAN": "LIST_PICK_RAN",
+      "LIST_PICK_ORDER_INVERSE": "LIST_PICK_ORDER_INVERSE",
+      "LIST_PICK_HIGH_RARITY": "LIST_PICK_HIGH_RARITY",
+      "LIST_PICK_LOW_RARITY": "LIST_PICK_LOW_RARITY",
+      "LIST_PICK_HIGH_COST": "LIST_PICK_HIGH_COST",
+      "LIST_PICK_LOW_COST": "LIST_PICK_LOW_COST",
+      "LIST_PICK_CHAR_EACH_FLAT": "LIST_PICK_CHAR_EACH_FLAT",
+      "LIST_PICK_HIGHEST_COST": "LIST_PICK_HIGHEST_COST",
+      "LIST_PICK_RAN_NOT_TRIGGERED_INSPIRATION": "LIST_PICK_RAN_NOT_TRIGGERED_INSPIRATION",
+      "LIST_PICK_DECK_FIRST": "LIST_PICK_DECK_FIRST"
+    },
+    "CARD_PLACE": {
+      "CARD_PLACE_NONE": 0,
+      "CARD_PLACE_DECK": 1,
+      "CARD_PLACE_HAND": 2,
+      "CARD_PLACE_DISCARD": 3,
+      "CARD_PLACE_EXHAUST": 4,
+      "CARD_PLACE_DECK_TOP": 5,
+      "CARD_PLACE_DECK_BOTTOM": 6,
+      "CARD_PLACE_USING": 7,
+      "CARD_PLACE_ALL": 8,
+      "CARD_PLACE_MONSTER": 9,
+      "CARD_PLACE_MONSTER_CASTER": 10,
+      "CARD_PLACE_USED": 11,
+      "CARD_PLACE_EXCEPT_EXHAUST": 12,
+      "CARD_PLACE_EXCEPT_EXHAUST_MONSTER": 13,
+      "CARD_PLACE_STAGE_DECK": 14,
+      "CARD_PLACE_DISCARD_USED": 15,
+      "CARD_PLACE_DECK_DISCARD": 16,
+      "CARD_PLACE_DECK_DISCARD_USED": 17,
+      "CARD_PLACE_DECK_HAND": 18,
+      "CARD_PLACE_DISCARD_HAND": 19,
+      "CARD_PLACE_DISCARD_USED_HAND": 20,
+      "CARD_PLACE_DECK_HAND_DISCARD": 21,
+      "CARD_PLACE_DECK_DISCARD_USED_USING": 22
+    }
+  },
+  "proof": [
+    {
+      "enum": "TARGET_CARD",
+      "bytecode_address": "0xf00000010500",
+      "instructions_verified": 64,
+      "assignments": [
+        {
+          "key": "CARD_SET_NONE",
+          "value": "CARD_SET_NONE",
+          "set_offset": 2
+        },
+        {
+          "key": "CARD_SET_ALL",
+          "value": "CARD_SET_ALL",
+          "set_offset": 8
+        },
+        {
+          "key": "CART_SET_ALL_INCLUDE_DESIGNED",
+          "value": "CARD_SET_ALL_INCLUDE_DESIGNED",
+          "set_offset": 14
+        },
+        {
+          "key": "CARD_SET_GET_CARD",
+          "value": "CARD_SET_GET_CARD",
+          "set_offset": 20
+        },
+        {
+          "key": "CARD_SET_DESIGNED",
+          "value": "CARD_SET_DESIGNED",
+          "set_offset": 26
+        },
+        {
+          "key": "CARD_SET_DESIGNED_R_SPARK",
+          "value": "CARD_SET_DESIGNED_R_SPARK",
+          "set_offset": 32
+        },
+        {
+          "key": "CARD_SET_ALL_EXCEPT_DESIGNED",
+          "value": "CARD_SET_ALL_EXCEPT_DESIGNED",
+          "set_offset": 38
+        },
+        {
+          "key": "CARD_SET_CHAR_EXCEPT_DESIGNED",
+          "value": "CARD_SET_CHAR_EXCEPT_DESIGNED",
+          "set_offset": 44
+        },
+        {
+          "key": "CARD_SET_CHAR_EXCEPT_THIS_CARD",
+          "value": "CARD_SET_CHAR_EXCEPT_THIS_CARD",
+          "set_offset": 50
+        },
+        {
+          "key": "CARD_SET_CHAR_EXCEPT_THIS_R_SPARK",
+          "value": "CARD_SET_CHAR_EXCEPT_THIS_R_SPARK",
+          "set_offset": 56
+        },
+        {
+          "key": "CARD_SET_THIS_CARD",
+          "value": "CARD_SET_THIS_CARD",
+          "set_offset": 62
+        },
+        {
+          "key": "CARD_SET_ALL_EXCEPT_THIS_CARD",
+          "value": "CARD_SET_ALL_EXCEPT_THIS_CARD",
+          "set_offset": 68
+        },
+        {
+          "key": "CARD_SET_ALL_EXCEPT_OWN_EGO",
+          "value": "CARD_SET_ALL_EXCEPT_OWN_EGO",
+          "set_offset": 74
+        },
+        {
+          "key": "CARD_SET_BEFORE_EFF_TARGET",
+          "value": "CARD_SET_BEFORE_EFF_TARGET",
+          "set_offset": 80
+        },
+        {
+          "key": "CARD_SET_BEFORE_EFF_EXCEPT_TARGET",
+          "value": "CARD_SET_BEFORE_EFF_EXCEPT_TARGET",
+          "set_offset": 86
+        },
+        {
+          "key": "CARD_SET_TURN_DRAW",
+          "value": "CARD_SET_TURN_DRAW",
+          "set_offset": 92
+        },
+        {
+          "key": "CARD_SET_TURN_DRAW_CHAR",
+          "value": "CARD_SET_TURN_DRAW_CHAR",
+          "set_offset": 98
+        },
+        {
+          "key": "CARD_SET_REWARD_ID",
+          "value": "CARD_SET_REWARD_ID",
+          "set_offset": 104
+        },
+        {
+          "key": "CARD_SET_USING",
+          "value": "CARD_SET_USING",
+          "set_offset": 110
+        },
+        {
+          "key": "CARD_SET_USED_BEFORE",
+          "value": "CARD_SET_USED_BEFORE",
+          "set_offset": 116
+        },
+        {
+          "key": "CARD_SET_TRIGGERED",
+          "value": "CARD_SET_TRIGGERED",
+          "set_offset": 122
+        },
+        {
+          "key": "CARD_SET_TRIGGERED_OWNER",
+          "value": "CARD_SET_TRIGGERED_OWNER",
+          "set_offset": 128
+        },
+        {
+          "key": "CARD_SET_USABLE",
+          "value": "CARD_SET_USABLE",
+          "set_offset": 134
+        },
+        {
+          "key": "CARD_SET_CHAR_EGO",
+          "value": "CARD_SET_CHAR_EGO",
+          "set_offset": 140
+        },
+        {
+          "key": "CARD_SET_CHAR",
+          "value": "CARD_SET_CHAR",
+          "set_offset": 146
+        },
+        {
+          "key": "CARD_SET_NOT_CHAR_OWNER",
+          "value": "CARD_SET_NOT_CHAR_OWNER",
+          "set_offset": 152
+        },
+        {
+          "key": "CARD_SET_EXCEPT_CHAR_OWNER",
+          "value": "CARD_SET_EXCEPT_CHAR_OWNER",
+          "set_offset": 158
+        },
+        {
+          "key": "CARD_SET_CLASS",
+          "value": "CARD_SET_CLASS",
+          "set_offset": 164
+        },
+        {
+          "key": "CARD_SET_USE_THIS_TURN",
+          "value": "CARD_SET_USE_THIS_TURN",
+          "set_offset": 170
+        },
+        {
+          "key": "CARD_SET_TRIGGER_INSPIRATION",
+          "value": "CARD_SET_TRIGGER_INSPIRATION",
+          "set_offset": 176
+        },
+        {
+          "key": "CARD_SET_TRIGGER_ATTUNMENT",
+          "value": "CARD_SET_TRIGGER_ATTUNMENT",
+          "set_offset": 182
+        }
+      ]
+    },
+    {
+      "enum": "CARD_SET_PICK_TYPE",
+      "bytecode_address": "0xf00000012c00",
+      "instructions_verified": 26,
+      "assignments": [
+        {
+          "key": "LIST_PICK_NONE",
+          "value": "LIST_PICK_NONE",
+          "set_offset": 2
+        },
+        {
+          "key": "LIST_PICK_ORDER",
+          "value": "LIST_PICK_ORDER",
+          "set_offset": 8
+        },
+        {
+          "key": "LIST_PICK_RAN",
+          "value": "LIST_PICK_RAN",
+          "set_offset": 14
+        },
+        {
+          "key": "LIST_PICK_ORDER_INVERSE",
+          "value": "LIST_PICK_ORDER_INVERSE",
+          "set_offset": 20
+        },
+        {
+          "key": "LIST_PICK_HIGH_RARITY",
+          "value": "LIST_PICK_HIGH_RARITY",
+          "set_offset": 26
+        },
+        {
+          "key": "LIST_PICK_LOW_RARITY",
+          "value": "LIST_PICK_LOW_RARITY",
+          "set_offset": 32
+        },
+        {
+          "key": "LIST_PICK_HIGH_COST",
+          "value": "LIST_PICK_HIGH_COST",
+          "set_offset": 38
+        },
+        {
+          "key": "LIST_PICK_LOW_COST",
+          "value": "LIST_PICK_LOW_COST",
+          "set_offset": 44
+        },
+        {
+          "key": "LIST_PICK_CHAR_EACH_FLAT",
+          "value": "LIST_PICK_CHAR_EACH_FLAT",
+          "set_offset": 50
+        },
+        {
+          "key": "LIST_PICK_HIGHEST_COST",
+          "value": "LIST_PICK_HIGHEST_COST",
+          "set_offset": 56
+        },
+        {
+          "key": "LIST_PICK_RAN_NOT_TRIGGERED_INSPIRATION",
+          "value": "LIST_PICK_RAN_NOT_TRIGGERED_INSPIRATION",
+          "set_offset": 62
+        },
+        {
+          "key": "LIST_PICK_DECK_FIRST",
+          "value": "LIST_PICK_DECK_FIRST",
+          "set_offset": 68
+        }
+      ]
+    },
+    {
+      "enum": "CARD_PLACE",
+      "bytecode_address": "0xf00000013f00",
+      "instructions_verified": 117,
+      "assignments": [
+        {
+          "key": "CARD_PLACE_NONE",
+          "value": 0,
+          "set_offset": 2
+        },
+        {
+          "key": "CARD_PLACE_DECK",
+          "value": 1,
+          "set_offset": 15
+        },
+        {
+          "key": "CARD_PLACE_HAND",
+          "value": 2,
+          "set_offset": 28
+        },
+        {
+          "key": "CARD_PLACE_DISCARD",
+          "value": 3,
+          "set_offset": 41
+        },
+        {
+          "key": "CARD_PLACE_EXHAUST",
+          "value": 4,
+          "set_offset": 54
+        },
+        {
+          "key": "CARD_PLACE_DECK_TOP",
+          "value": 5,
+          "set_offset": 67
+        },
+        {
+          "key": "CARD_PLACE_DECK_BOTTOM",
+          "value": 6,
+          "set_offset": 80
+        },
+        {
+          "key": "CARD_PLACE_USING",
+          "value": 7,
+          "set_offset": 93
+        },
+        {
+          "key": "CARD_PLACE_ALL",
+          "value": 8,
+          "set_offset": 106
+        },
+        {
+          "key": "CARD_PLACE_MONSTER",
+          "value": 9,
+          "set_offset": 119
+        },
+        {
+          "key": "CARD_PLACE_MONSTER_CASTER",
+          "value": 10,
+          "set_offset": 132
+        },
+        {
+          "key": "CARD_PLACE_USED",
+          "value": 11,
+          "set_offset": 145
+        },
+        {
+          "key": "CARD_PLACE_EXCEPT_EXHAUST",
+          "value": 12,
+          "set_offset": 158
+        },
+        {
+          "key": "CARD_PLACE_EXCEPT_EXHAUST_MONSTER",
+          "value": 13,
+          "set_offset": 171
+        },
+        {
+          "key": "CARD_PLACE_STAGE_DECK",
+          "value": 14,
+          "set_offset": 184
+        },
+        {
+          "key": "CARD_PLACE_DISCARD_USED",
+          "value": 15,
+          "set_offset": 197
+        },
+        {
+          "key": "CARD_PLACE_DECK_DISCARD",
+          "value": 16,
+          "set_offset": 210
+        },
+        {
+          "key": "CARD_PLACE_DECK_DISCARD_USED",
+          "value": 17,
+          "set_offset": 223
+        },
+        {
+          "key": "CARD_PLACE_DECK_HAND",
+          "value": 18,
+          "set_offset": 236
+        },
+        {
+          "key": "CARD_PLACE_DISCARD_HAND",
+          "value": 19,
+          "set_offset": 249
+        },
+        {
+          "key": "CARD_PLACE_DISCARD_USED_HAND",
+          "value": 20,
+          "set_offset": 262
+        },
+        {
+          "key": "CARD_PLACE_DECK_HAND_DISCARD",
+          "value": 21,
+          "set_offset": 275
+        },
+        {
+          "key": "CARD_PLACE_DECK_DISCARD_USED_USING",
+          "value": 22,
+          "set_offset": 288
+        }
+      ]
+    }
+  ],
+  "unmatched_resource_values": {
+    "target_card_set": {
+      "counts": {},
+      "rows": []
+    },
+    "target_card_set_list_pick_type": {
+      "counts": {
+        "LIST_PICK_RANDOM": 8,
+        "LIST_PICK_ALL": 1
+      },
+      "rows": [
+        {
+          "source": "db/card(assault)@skill_eff.json",
+          "row_index": 238,
+          "id": "card_ds03_assualt_00007_02",
+          "value": "LIST_PICK_RANDOM",
+          "eff": "SKILL_EFF_CARD_MOVE_TO"
+        },
+        {
+          "source": "db/card(assault)@skill_eff.json",
+          "row_index": 286,
+          "id": "card_enc_ca_00037_01",
+          "value": "LIST_PICK_RANDOM",
+          "eff": "SKILL_EFF_CARD_COPY_TO"
+        },
+        {
+          "source": "db/card(disaster)@skill_eff.json",
+          "row_index": 86,
+          "id": "card_ds03_00007_02",
+          "value": "LIST_PICK_RANDOM",
+          "eff": "SKILL_EFF_CARD_MOVE_TO"
+        },
+        {
+          "source": "db/card(eidolon)@skill_eff.json",
+          "row_index": 11,
+          "id": "card_ds03_eid_00006_01",
+          "value": "LIST_PICK_RANDOM",
+          "eff": "SKILL_EFF_CARD_MOVE_TO"
+        },
+        {
+          "source": "db/card(eidolon)@skill_eff.json",
+          "row_index": 37,
+          "id": "card_ds03_eid_00020_02",
+          "value": "LIST_PICK_RANDOM",
+          "eff": "SKILL_EFF_CARD_MOVE_TO"
+        },
+        {
+          "source": "db/card(eidolon)@skill_eff.json",
+          "row_index": 140,
+          "id": "card_ds04_des_40031_02",
+          "value": "LIST_PICK_RANDOM",
+          "eff": "SKILL_EFF_CARD_DISCARD"
+        },
+        {
+          "source": "db/card(eidolon)@skill_eff.json",
+          "row_index": 143,
+          "id": "card_ds04_des_40032_02",
+          "value": "LIST_PICK_RANDOM",
+          "eff": "SKILL_EFF_CARD_DISCARD"
+        },
+        {
+          "source": "db/card(eidolon)@skill_eff.json",
+          "row_index": 146,
+          "id": "card_ds04_des_40033_02",
+          "value": "LIST_PICK_RANDOM",
+          "eff": "SKILL_EFF_CARD_DISCARD"
+        },
+        {
+          "source": "db/cs(monster)@skill_eff.json",
+          "row_index": 651,
+          "id": "cs02_2027_01",
+          "value": "LIST_PICK_ALL",
+          "eff": "SKILL_EFF_CS_SET_ADD"
+        }
+      ]
+    },
+    "target_card_set_list_card_place": {
+      "counts": {
+        "CARD_PLACE_ HAND": 4
+      },
+      "rows": [
+        {
+          "source": "db/card(assault)@skill_eff.json",
+          "row_index": 118,
+          "id": "card_ne_assualt_00018_01",
+          "value": "CARD_PLACE_ HAND",
+          "eff": "SKILL_EFF_CARD_DISCARD"
+        },
+        {
+          "source": "db/card(domi)@skill_eff.json",
+          "row_index": 155,
+          "id": "c_1041_uni1_03",
+          "value": "CARD_PLACE_ HAND",
+          "eff": "SKILL_EFF_CARD_DISCARD"
+        },
+        {
+          "source": "db/card(hongooo)@skill_eff.json",
+          "row_index": 223,
+          "id": "c_1027_uni2_rsp3_2",
+          "value": "CARD_PLACE_ HAND",
+          "eff": "SKILL_EFF_CARD_EXHAUST"
+        },
+        {
+          "source": "db/card(public)@skill_eff.json",
+          "row_index": 35,
+          "id": "card_ne_00018_01",
+          "value": "CARD_PLACE_ HAND",
+          "eff": "SKILL_EFF_CARD_DISCARD"
+        }
+      ]
+    }
+  },
+  "do_not_infer_aliases": "LIST_PICK_RANDOM/ALL are not LIST_PICK_RAN; CARD_PLACE_ HAND is not HAND; CART_SET key has proven different value"
+}

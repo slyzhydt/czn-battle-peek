@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "portableResourceGraphPreserved": true,
+  "fullPredictedGraphMatchesPriorEngine": true,
+  "fullStateMatchesRecordedLiveAfterTwoActions": true,
+  "rootAndRngUnchanged": true,
+  "gameAttached": false,
+  "privateFixturesIncludedInPublicRepo": false,
+  "schema": "czn-battle-peek-validation-v1",
+  "version": "0.1.0-preview",
+  "priorNativeReadAndTwoActionComparisonPassed": true,
+  "allCharactersValidated": false,
+  "portableLiveCaptureSeparatelyValidated": false
+}
